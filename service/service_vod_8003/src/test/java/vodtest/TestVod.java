@@ -14,11 +14,11 @@ import java.util.List;
 public class TestVod {
 
     public static void main(String[] args) throws Exception{
-//        String accessKeyId = "LTAI4GEaMFpwrXSDQjatJPyd";
-//        String accessKeySecret = "QuZViFLU92ZtKHsfxc2ibq1LeiohaV";
+//        String accessKeyId = "xxxx";
+//        String accessKeySecret = "xxxxx";
 //
 //        String title = "6 - What If I Want to Move Faster - upload by sdk";   //上传之后文件名称
-//        String fileName = "C:\\Users\\caigz\\Desktop\\新建文件夹\\项目资料\\1-阿里云上传测试视频\\6 - What If I Want to Move Faster.mp4";  //本地文件路径和名称
+//        String fileName = xxxx";  //本地文件路径和名称
 //        //上传视频的方法
 //        UploadVideoRequest request = new UploadVideoRequest(accessKeyId, accessKeySecret, title, fileName);
 //        /* 可指定分片上传时每个分片的大小，默认为2M字节 */
@@ -44,7 +44,7 @@ public class TestVod {
     //1 根据视频iD获取视频播放凭证
     public static void getPlayAuth() throws Exception{
 
-        DefaultAcsClient client = InitObject.initVodClient("LTAI4GEaMFpwrXSDQjatJPyd", "QuZViFLU92ZtKHsfxc2ibq1LeiohaV");
+        DefaultAcsClient client = InitObject.initVodClient("xxxx", "xxxxx");
 
         GetVideoPlayAuthRequest request = new GetVideoPlayAuthRequest();
         GetVideoPlayAuthResponse response = new GetVideoPlayAuthResponse();
@@ -57,7 +57,7 @@ public class TestVod {
     //1 根据视频iD获取视频播放地址
     public static void getPlayUrl() throws Exception{
         //创建初始化对象
-        DefaultAcsClient client = InitObject.initVodClient("LTAI4GEaMFpwrXSDQjatJPyd", "QuZViFLU92ZtKHsfxc2ibq1LeiohaV");
+        DefaultAcsClient client = InitObject.initVodClient("xxx", "xxxx");
 
         //创建获取视频地址request和response
         GetPlayInfoRequest request = new GetPlayInfoRequest();
