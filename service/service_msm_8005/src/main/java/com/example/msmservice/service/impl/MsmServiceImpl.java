@@ -24,7 +24,7 @@ public class MsmServiceImpl implements MsmService {
         }
 
         DefaultProfile profile =
-                DefaultProfile.getProfile("default", "LTAI4GEaMFpwrXSDQjatJPyd", "QuZViFLU92ZtKHsfxc2ibq1LeiohaV");
+                DefaultProfile.getProfile("default", "xxxx", "xxxxx");
         IAcsClient client = new DefaultAcsClient(profile);
 
         //设置相关固定的参数
@@ -37,8 +37,8 @@ public class MsmServiceImpl implements MsmService {
 
         //设置发送相关的参数
         request.putQueryParameter("PhoneNumbers",phone); //手机号
-        request.putQueryParameter("SignName","夏天在线教育网站"); //申请阿里云 签名名称
-        request.putQueryParameter("TemplateCode","SMS_196659937"); //申请阿里云 模板code
+        request.putQueryParameter("SignName","xxxxx"); //申请阿里云 签名名称
+        request.putQueryParameter("TemplateCode","xxxxxx"); //申请阿里云 模板code
         request.putQueryParameter("TemplateParam", JSONObject.toJSONString(param)); //验证码数据，转换json数据传递
 
         try {
